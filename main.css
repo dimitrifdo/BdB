@@ -1,0 +1,653 @@
+*{text-decoration: none;}
+a{text-decoration: none; color:#454545;}
+
+body{
+	background:url('images/bg.png');
+	text-decoration: none;
+}
+
+div.content_container{
+position:relative;
+transition:all .2s ease-out; 
+-o-transition:all .2s ease-out;
+-ms-transition:all .2s ease-out;
+-webkit-transition:all .2s ease-out;
+-moz-transition:all .2s ease-out;
+}
+
+div#content{
+	display: block;
+	position: relative;
+	top:0;
+	z-index:5;
+	width:822px;
+	margin:20px auto 0 auto;
+
+	font-family: 'Abel', sans-serif;
+
+	text-transform: uppercase;
+
+	/************************************************** THE FLICKERING ISSUES*********************************************/
+
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+
+	transition:all .2s ease-out; 
+	-o-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+	-moz-transition:all .2s ease-out;
+}
+
+.moveover{
+	position: relative;
+	transform:translate(160px, 0px);
+	-o-transform:translate(160px, 0px);
+	-moz-transform:translate(160px, 0px);
+	-webkit-transform:translate(160px, 0px);
+}
+
+div#intro{
+	height:486px;
+}
+
+div#dim{
+	width:394px;
+	height:394px;
+	padding:45px;
+	float:left;
+
+	cursor: pointer;
+	background:#69d2e7;
+}
+
+#dim:hover #name{
+	color:#03424e;
+}
+
+#dim > p {color:white; font-size:60px; margin:0px;}
+p#name{
+	color:#166879; font-size:80px; margin-top:30px;
+	transition:all .1s linear; -o-transition:all .1s linear;
+	-ms-transition:all .1s linear; -moz-transition:all .1s linear;
+	-webkit-transition:all .1s linear;
+}
+
+div#display_pic{
+	background:url('images/dim_pic.jpg');
+	width:336px;
+	height:371px;
+	float:left;
+	margin-left:2px;
+}
+
+div#fig{
+	background:#e0e4cc;
+	width:336px;
+	height:111px;
+	float:left;
+	margin:2px 0px 0px 2px;
+
+	line-height:111px;
+	text-align: center;
+	font-size:20px;
+}
+
+div.divider{   /*  "I HAVE A..." SEPERATOR  */
+	display:block;
+	background:white;
+	color:#166879;
+	font-size:30px;
+
+	width:822px;
+	height:52px;
+	margin: 0px 0px 2px 0px;
+
+	line-height:52px;
+	text-align: center;
+}
+
+/*** START OF QUALIFICATIONS AREA ***/
+
+#qualifications{
+	margin-bottom:2px;
+	color:white;
+	text-transform: uppercase;
+	height:272px;
+	overflow: hidden;
+}
+
+#qualifications .qual{
+	position:relative;
+	width:242px;
+	height:272px;
+	float:left;
+	overflow: hidden;
+	cursor: pointer;
+
+	font-size: 28px;
+	padding:0px 0px 0px 30px;
+
+	 display: table;
+}
+
+#qualifications .school{
+	position: absolute;
+	width:275px;
+	height:300px;
+	z-index:5;
+
+	top:272px;
+	left:0px;
+
+	transition:all .2s ease-out;
+	-o-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	-moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+}
+
+#qualifications .qual span{
+	position: relative;
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: left;
+	z-index:4;
+
+	transition:all .2s ease-out;
+	-o-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	-moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+}
+
+/*  COMPUTER SCIENCE DEGREE SECTION  */
+
+#qualifications #compSci{
+	background:#fa6900;
+	margin-right:2px;
+}
+
+#qualifications #compSci:hover .school{
+	transform:translateY(-273px);
+	-o-transform:translateY(-273px);
+	-ms-transform:translateY(-273px);
+	-moz-transform:translateY(-273px);
+	-webkit-transform:translateY(-273px);
+}
+
+#qualifications #compSci:hover span{
+	transform:translateY(-100px);
+	-o-transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-moz-transform:translateY(-100px);
+	-webkit-transform:translateY(-100px);
+}
+
+/*  MULTIMEDIA DEGREE SECTION  */
+
+#qualifications #multi{
+	background:#f38630;
+	margin-right:2px;
+}
+
+#qualifications #multi:hover .school{
+	transform:translateY(-273px);
+	-o-transform:translateY(-273px);
+	-ms-transform:translateY(-273px);
+	-moz-transform:translateY(-273px);
+	-webkit-transform:translateY(-273px);
+}
+
+#qualifications #multi:hover span{
+	transform:translateY(-100px);
+	-o-transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-moz-transform:translateY(-100px);
+	-webkit-transform:translateY(-100px);
+}
+
+/*  CERT IV DEGREE SECTION  */
+
+#qualifications #cert4{
+	background:#a7dbd8;
+	color:#fa6900;
+	width:244px;
+}
+
+#qualifications #cert4:hover .school{
+	transform:translateY(-273px);
+	-o-transform:translateY(-273px);
+	-ms-transform:translateY(-273px);
+	-moz-transform:translateY(-273px);
+	-webkit-transform:translateY(-273px);
+}
+
+#qualifications #cert4:hover span{
+	transform:translateY(-100px);
+	-o-transform:translateY(-100px);
+	-ms-transform:translateY(-100px);
+	-moz-transform:translateY(-100px);
+	-webkit-transform:translateY(-100px);
+}
+
+#qualifications .swin{
+	background:#d40426 url('images/swin.png') no-repeat 48% 48%;
+}
+
+#qualifications .russo{
+	background:#014f5b url('images/russo.png') no-repeat 48% 48%;
+}
+
+
+/*** START OF SKILLS AREA ***/
+
+#skills{
+	position: relative;
+	margin-top:0px;
+	color:white;
+	text-transform: uppercase;
+	height:350px;
+}
+
+#skills .skill{
+	display: block;
+	width:410px;
+	position: relative;
+	overflow: hidden;
+}
+
+#skills .skill span{
+	font-size: 36px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#skills #sales{
+	background: #eb6841;
+	height:173px;
+	float:left;
+	clear:both;
+	margin:0px 2px 2px 0px;
+
+	cursor: pointer;
+}
+
+#skills #multimedia{
+	background: #edc951;
+	height:173px;
+	float:left;
+	clear:both;
+	margin-right: 2px;
+
+	cursor: pointer;
+}
+
+#skills #marketing{
+	background: #cc333f;
+	height:348px;
+
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+
+	cursor: pointer;
+}
+
+/*** SKILLS PICS ***/
+
+#cash{
+	overflow: hidden;
+	height: 95px;
+	width:87px;
+	position:absolute;
+
+	background: url('images/cash.png') no-repeat 0px 0px;
+
+	left: 50%;
+	top: 63%;
+	margin: -43px;
+}
+
+#tv{
+	overflow: hidden;
+	height: 80px;
+	width:80px;
+	position:absolute;
+	left: 20%;
+	top: 20%;
+
+	background: url('images/tv.gif') no-repeat;
+}
+
+#graph{
+	overflow: hidden;
+	height: 350px;
+	width: 410px;
+	position:absolute;
+
+	left: -30%;
+	top: 40%;
+
+	background: url('images/graph.png') no-repeat -60px 0px;
+
+	transition:all .2s ease-out;
+	-o-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out;
+	-moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+}
+
+#skills #sales:hover #cash{
+	top:50%;
+	height:150px;
+	background: url('images/cash.png') no-repeat 0px -94px;
+}
+
+#skills #multimedia:hover #tv{
+	background: url('images/tv.gif') no-repeat 0px -83px;
+}
+
+#skills #marketing:hover #graph{
+	transform:translate(50px, -80px);
+	-o-transform:translate(50px, -80px);
+	-ms-transform:translate(50px, -80px);
+	-moz-transform:translate(50px, -80px);
+	-webkit-transform:translate(50px, -80px);
+}
+
+/*********************************
+            SOFTWARE AREA
+*********************************/
+#software{
+	position: relative;
+	display: block;
+
+	margin:0 auto 0 auto;
+	left: -1px;
+	width:824px;
+}
+
+#cd6{
+	position: relative;
+	display: block;
+	width:540px;
+	height:300px;
+	float:left;
+
+}
+
+#cd6 #cd6_inner{ 
+	position:relative; display:block; height:300px; width:540px;
+	background:url('images/software.png') no-repeat 0px 0px;
+}
+
+#office{
+	position: relative;
+	display: block;
+	width:280px;
+	height:300px;
+	float:left;
+
+}
+
+#office #office_inner{ 
+	position:relative; display:block; height:300px; width:280px;
+	background:url('images/software.png') no-repeat -540px 0px;
+}
+
+#web{
+	position: relative;
+	display: block;
+	width:154px;
+	height:120px;
+	clear: left;
+	float:left;
+
+}
+
+#web #web_inner{ 
+	position:relative; display:block; height:120px; width:154px;
+	background:url('images/software.png') no-repeat 0px -300px;
+}
+
+#jquery{
+	position: relative;
+	display: block;
+	width:314px;
+	height:120px;
+	float:left;
+
+}
+
+#jquery #jquery_inner{ 
+	position:relative; display:block; height:120px; width:314px;
+	background:url('images/software.png') no-repeat -154px -300px;
+}
+
+#intuit{
+	position: relative;
+	display: block;
+	width:350px;
+	height:120px;
+	float:left;
+
+}
+
+#intuit #intuit_inner{ 
+	position:relative; display:block; height:120px; width:350px;
+	background:url('images/software.png') no-repeat -470px -300px;
+}
+
+#facebook{
+	position: relative;
+	display: block;
+	height:130px;
+	width:204px;
+	float: left;
+}
+
+#facebook #facebook_inner{
+	position:relative; display: block; height:130px; width:203px;
+	background:url('images/seostuff.png') no-repeat -412px;
+}
+
+#twitter{
+	position: relative;
+	display: block;
+	height:130px;
+	width:204px;
+	float: left;
+}
+
+#twitter #twitter_inner{
+	position:relative; display: block; height:130px; width:204px;
+	background:url('images/seostuff.png') no-repeat -617px;
+}
+
+
+#googleseo{
+	position: relative;
+	display: block;
+	height:130px;
+	width:410px;
+	float: left;
+}
+
+#googleseo #googleseo_inner{
+	position:relative; display: block; height:130px; width:410px;
+	background:url('images/seostuff.png') no-repeat 0px 0px;
+}
+
+
+div#software div.bigger {overflow: hidden; border:solid 1px transparent; cursor:pointer;}
+
+div#software div.bigger > div{
+	transition:all .1s ease-out;
+	-o-transition:all .1s ease-out;
+	-ms-transition:all .1s ease-out;
+	-moz-transition:all .1s ease-out;
+	-webkit-transition:all .1s ease-out;
+}
+
+div#software div.bigger:hover > div{
+	transform: scale(1.08,1.08);
+	-o-transform: scale(1.08,1.08);
+	-ms-transform: scale(1.08,1.08);
+	-moz-transform: scale(1.08,1.08);
+	-webkit-transform: scale(1.08,1.08);
+}
+
+/****************************************
+
+			   CONTACT STUFF
+
+****************************************/
+
+div#contact_button{
+	position: absolute;
+	display: block;
+	width:64px;
+	height:65px;
+	opacity: .7;
+	visibility: visible;
+
+	left:-10%;
+
+	cursor:pointer;
+	background: url('images/phone.png') no-repeat;
+
+
+/*
+	transition:opacity .2s ease-out; -o-transition:opacity .2s ease-out;
+	-ms-transition:opacity .2s ease-out; -moz-transition:opacity .2s ease-out;
+	-webkit-transition:opacity .2s ease-out;
+*/
+	transition:opacity .2s ease-out 0s, visibility .1s linear;
+	-o-transition:opacity .2s ease-out 0s, visibility .1s linear;
+	-ms-transition:opacity .2s ease-out 0s, visibility .1s linear;
+	-moz-transition:opacity .2s ease-out 0s, visibility .1s linear;
+	-webkit-transition:opacity .2s ease-out 0s, visibility .1s linear;
+}
+
+.movebutton{
+	opacity:0 !important;
+	visibility: hidden !important;
+}
+
+div.content_container div#contact_button:hover{
+	opacity: 1;
+}
+
+div.content_container div#contact_button:active{
+	background: url('images/phone.png') no-repeat 0px -65px;
+}
+
+.contact_container{
+	position: fixed;
+	display: block;
+	height: 100%;
+	width:25%;
+	overflow: hidden;
+	font-family: 'Signika', sans-serif;
+
+
+	margin-top:-20px;
+	margin-left:0px;
+	padding:40px 0px 0px 0px;
+	float: right;
+	left:-26%;
+	background: white;
+
+	transition:all .2s ease-out; -o-transition:all .2s ease-out;
+	-ms-transition:all .2s ease-out; -moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-out;
+
+
+	-webkit-box-shadow:5px 0px 9px rgba(0, 0, 0, .75);
+	-moz-box-shadow:5px 0px 9px rgba(0, 0, 0, .75);
+	box-shadow:5px 0px 9px rgba(0, 0, 0, .75);
+}
+
+.openit{
+	left:0%;
+
+	transition:all .3s ease-out; -o-transition:all .3s ease-out;
+	-ms-transition:all .3s ease-out; -moz-transition:all .3s ease-out;
+	-webkit-transition:all .3s ease-out;
+}
+
+
+.contact_container #cc_container{
+	position: relative;
+	display: block;
+	width:225px;
+	margin:0px auto 0px auto;t
+
+}
+
+.contact_container #cc_container p{
+	font-size:37px;
+	color: #454545;
+	text-align: left;
+	font-family: 'Signika', sans-serif;
+}
+
+.contact_container #cc_container p span{
+	font-size:16px;
+	text-align: left;
+	font-family: 'Signika', sans-serif;
+	text-decoration: none;
+}
+
+.contact_container #cc_container p span.cat{
+	display: inline-block;
+	width: 60px;
+	color: #a6a1a1;
+	font-family: 'Signika', sans-serif;
+}
+
+
+div#behance a{
+	display: block;
+	position: relative;
+	width: 50px;
+	height:50px;
+	cursor:pointer;
+	float: left;
+
+	background:url('images/behance_button.png') no-repeat 0px 0px;
+	opacity: .7;
+
+	transition:opacity .1s linear;
+	-o-transition:opacity .1s linear;
+	-moz-transition:opacity .1s linear;
+	-webkit-transition:opacity .1s linear;
+}
+
+div#behance a:hover{
+	opacity:1;
+}
+
+div#linkedIn a{
+	display: block;
+	width: 50px;
+	height:50px;
+	cursor:pointer;
+	float: left;
+	margin:0px 0px 0px 7px;
+
+	background:url('images/contact.png') no-repeat -176px -18px;
+	opacity: .7;
+
+	transition:opacity .1s linear;
+	-o-transition:opacity .1s linear;
+	-moz-transition:opacity .1s linear;
+	-webkit-transition:opacity .1s linear;
+}
+
+div#linkedIn a:hover{
+	opacity: 1;
+}
